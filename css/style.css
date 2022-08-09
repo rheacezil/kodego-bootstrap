@@ -1,0 +1,107 @@
+body::before {
+    display: block;
+    content: '';
+    height: 60px;
+  }
+  
+/* ---------- Newsletter --------- */
+  @media (min-width: 768px) {
+   .news-input {
+     width: 50%;
+   }
+ }
+
+ /* ---------- Portfolio --------- */
+ .portfolio-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(17, 36, 90, 0.9);
+  display: flex;
+  align-items: flex-end;
+  padding: 30px;
+  opacity: 0;
+ }
+ .portfolio-item:hover .portfolio-overlay {
+  opacity: 1;
+ }
+ .portfolio-item:hover img {
+  transform: scale(1.1);
+ }
+ .portfolio-item img,
+ .portfolio-item .portfolio-overlay {
+  transition: all 0.4s ease;
+ }
+
+/* ---------- Testimonail message --------- */
+ .review p {
+  max-width: 720px;
+  margin: 24px auto;
+  font-style: italic;
+}
+/* ---------- Alumni messages --------- */
+.team-member {
+  background-color: #11245A;
+}
+
+.team-member .hline {
+  width: 70px;
+  height: 2px;
+  margin: 16px auto;
+  background-color: rgba(255, 255, 255, 0.445);
+}
+
+.team-member .team-member-img .social-icons {
+  width: 100%;
+  height: 60px;
+  background-color: #E93B81;
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.team-member .team-member-img .social-icons a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  font-size: 24px;
+  color: #fff;
+  border-radius: 100px;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.team-member:hover img {
+  transform: translateY(-60px);
+}
+.team-member:hover .team-member-img .social-icons {
+  bottom: 0;
+}
+.team-member .team-member-img img,
+.team-member .team-member-img .social-icons {
+   transition: all 0.4s ease;
+}
+.team-member.even {
+  background-color: #162e6e;
+}
+
+/* ---------- Testimonail reviews --------- */
+#testimonial-reviews img {
+  width: 65px;
+  height: 65px;
+  border-radius: 100px;
+  transition: all 0.4s ease;
+}
+#testimonial-reviews .nav-pills .nav-link.active {
+  background-color: transparent;
+}
+#testimonial-reviews .nav-pills .nav-link.active img {
+  transform: scale(1.3);
+}
